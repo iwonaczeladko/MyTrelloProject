@@ -186,7 +186,6 @@ public class OrganizationTest extends BaseTest {
                 .statusCode(200);
     }
 
-/*
     @DisplayName("Create organization with valid data")
     @ParameterizedTest (name = "displayName: {0}, desc: {1}, name: {2}, website: {3}")
     @MethodSource("createOrganizationWithValidData")
@@ -228,9 +227,8 @@ public class OrganizationTest extends BaseTest {
                 .then()
                 .statusCode(200);
     }
-*/
 
-/*    @DisplayName("Create organization with invalid data")
+    @DisplayName("Create organization with invalid data")
     @ParameterizedTest (name = "displayName: {0}, desc: {1}, name: {2}, website: {3}")
     @MethodSource("createOrganizationWithInvalidData")
     @Order(8)
@@ -246,7 +244,7 @@ public class OrganizationTest extends BaseTest {
                 .post(BASE_URL + "/" + ORGANIZATIONS)
                 .then()
                 .statusCode(400);
-    }*/
+    }
 
     @Test
     @Order(9)
